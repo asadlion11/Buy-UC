@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: auto;
+    width: 90vw;
+}
+h1{
+    text-align: center;
+    margin: 40px auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.col-3{
+    flex-basis:22%;
+    padding: 15px;
+    margin: 2%;
+    min-width:350px;
+    text-align: center;
+    background-color:lightcyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 30px auto;
+}
+.small-title{
+    font-size: 2rem;
+}
+.tiny-title{
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1rem;
+    margin-top: 10px auto;
+}
+.btn{
+    border: none;
+   background-color: white;
+   color: black;
+   border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: wheat;
+    border: 2px solid black;
+    cursor: pointer;
+   
+
+}
+.col-2{
+    flex-basis: 45%;
+    background-color: lightcyan;
+    border: 2px solid black;
+    margin: 2%;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 350px;
+}
+.row-4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    margin-top: 20px;
+    height: fit-content;
+}
+.col-4{
+    border: 5px double white;
+    background-color: grey;
+    min-width: 300px;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 15px;
+    border-radius: 7px;
+}
+.btn-2{
+    background-color: black;
+    color: white;
+    font-size: inherit;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+.btn-2:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+@media screen and (max-width:880px){
+    body{
+        background-color: cyan;
+    }
+    .row{
+        background-color: black;
+    }
+    .row-4{
+        background-color:orange ;
+    }
+    .col-2{
+        background-color: white;
+        border: 5px solid cyan;
+    }
+    .col-3{
+        background-color: cyan;
+        border: 5px solid white;
+    }
+    .col-4{
+        background-color: crimson;
+        color: white;
+        border: 5px solid black;
+    }
+}
+@media screen and (max-width:660px){
+    body{
+        background-color:black;
+    }
+    .row{
+        background-color: white;
+    }
+    .col-2{
+        background-color: black;
+        color: white;
+        border: 5px solid red;
+    }
+    .col-3{
+        background-color: orange;
+    }
+    .col-4{
+        background-color: white;
+        border: 5px solid black;
+        color:black;
+    }
+    .row-4{
+        background-color: blue;
+    }
+    .btn:hover{
+        border: 2px solid white;
+    }
+}
